@@ -28,7 +28,11 @@
   }
   #navbar.scrolled { background-color: rgba(253, 252, 250, 0.95); border-bottom-color: #e7e5e4; box-shadow: 0 1px 3px rgba(0,0,0,0.04); }
   #mobile-menu { display: none; background-color: #fdfcfa; border-top: 1px solid #e7e5e4; }
-  #mobile-menu.open { display: block; }
+  #mobile-menu.open {
+    display: block; position: fixed; left: 0; right: 0; bottom: 0;
+    overflow-y: auto; -webkit-overflow-scrolling: touch;
+  }
+  body.mobile-menu-open { overflow: hidden; }
 
   /* ── Buttons ── */
   .btn-primary {
