@@ -1,0 +1,11 @@
+{
+  "name": "mefford-innovations-website",
+  "private": true,
+  "scripts": {
+    "build:css": "tailwindcss -i build/input.css -o docs/assets/css/style.css --minify"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.3.3",
+    "tailwindcss": "^4.3.3"
+  }
+}

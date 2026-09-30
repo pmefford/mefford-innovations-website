@@ -3,153 +3,116 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mefford Innovations LLC — AI-Powered Software Solutions</title>
-  <meta name="description" content="Mefford Innovations builds purpose-built AI applications and helps businesses harness AI to solve real problems. 25+ years of enterprise software engineering." />
-  <script>
-    tailwind.config = {
-      theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] } } }
-    }
+  <title>Mefford Innovations — AI Automation for Local Businesses in Utah County</title>
+  <meta name="description" content="Mefford Innovations designs and builds AI automations for local businesses: after-hours intake, follow-ups, and the integrations that connect your tools. Serving Utah County and beyond." />
+  <link rel="canonical" href="https://innovations.mefford.org/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Mefford Innovations — Automation that gives your team its time back" />
+  <meta property="og:description" content="AI automations for local businesses: after-hours intake, follow-ups, and the integrations that connect your tools." />
+  <meta property="og:url" content="https://innovations.mefford.org/" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/assets/css/style.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Mefford Innovations LLC",
+    "url": "https://innovations.mefford.org/",
+    "description": "AI automation and workflow consulting for local small businesses.",
+    "areaServed": { "@type": "AdministrativeArea", "name": "Utah County, UT" },
+    "founder": { "@type": "Person", "name": "Paul Mefford", "jobTitle": "Founder & Principal Engineer" }
+  }
   </script>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
-  <link rel="stylesheet" href="assets/css/style.css" />
 </head>
-<body class="bg-[#0a0e1a] text-slate-100 font-sans">
+<body class="bg-[#fdfcfa] text-slate-800 font-sans">
 
   <!-- ══ NAVIGATION ══ -->
   <nav id="navbar" class="fixed top-0 w-full z-50 px-6 py-4">
     <div class="max-w-6xl mx-auto flex items-center justify-between">
-      <a href="#hero" class="text-white font-bold text-lg tracking-tight">
-        Mefford <span class="text-blue-400">Innovations</span>
+      <a href="/" class="text-slate-900 font-bold text-lg tracking-tight">
+        Mefford <span class="text-indigo-600">Innovations</span>
       </a>
-      <div class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
-        <a href="#about" class="hover:text-white transition-colors">About</a>
-        <a href="#services" class="hover:text-white transition-colors">Services</a>
-        <a href="#apps" class="hover:text-white transition-colors">Apps</a>
-        <a href="#consulting" class="hover:text-white transition-colors">Consulting</a>
-        <a href="#contact" class="btn-primary text-sm py-2 px-5">Get In Touch</a>
+      <div class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-600">
+        <a href="/after-hours-assistant.html" class="hover:text-slate-900 transition-colors">After-Hours Assistant</a>
+        <a href="/custom-automation.html" class="hover:text-slate-900 transition-colors">Custom Automation</a>
+        <a href="/about.html" class="hover:text-slate-900 transition-colors">About</a>
+        <a href="/contact.html" data-cta-primary class="btn-primary text-sm py-2 px-5"><span data-cta-label>Get in touch</span></a>
       </div>
-      <button id="mobile-menu-btn" class="md:hidden text-slate-300 hover:text-white p-2" aria-label="Toggle menu">
+      <button id="mobile-menu-btn" class="md:hidden text-slate-600 hover:text-slate-900 p-2" aria-label="Toggle menu">
         <svg id="hamburger-icon" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
         <svg id="close-icon" class="hidden" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
       </button>
     </div>
     <div id="mobile-menu" class="md:hidden">
       <div class="max-w-6xl mx-auto px-0 py-4 flex flex-col gap-1 text-sm font-medium">
-        <a href="#about" class="px-4 py-3 text-slate-300 hover:text-white hover:bg-white/5 rounded-lg transition-colors">About</a>
-        <a href="#services" class="px-4 py-3 text-slate-300 hover:text-white hover:bg-white/5 rounded-lg transition-colors">Services</a>
-        <a href="#apps" class="px-4 py-3 text-slate-300 hover:text-white hover:bg-white/5 rounded-lg transition-colors">Apps</a>
-        <a href="#consulting" class="px-4 py-3 text-slate-300 hover:text-white hover:bg-white/5 rounded-lg transition-colors">Consulting</a>
-        <a href="#contact" class="px-4 py-3 text-blue-400 hover:text-blue-300 transition-colors font-semibold">Get In Touch →</a>
+        <a href="/after-hours-assistant.html" class="px-4 py-3 text-slate-600 hover:text-slate-900 hover:bg-slate-900/5 rounded-lg transition-colors">After-Hours Assistant</a>
+        <a href="/custom-automation.html" class="px-4 py-3 text-slate-600 hover:text-slate-900 hover:bg-slate-900/5 rounded-lg transition-colors">Custom Automation</a>
+        <a href="/about.html" class="px-4 py-3 text-slate-600 hover:text-slate-900 hover:bg-slate-900/5 rounded-lg transition-colors">About</a>
+        <a href="/contact.html" data-cta-primary class="px-4 py-3 text-indigo-600 hover:text-indigo-700 transition-colors font-semibold"><span data-cta-label>Get in touch</span> →</a>
       </div>
     </div>
   </nav>
 
   <!-- ══ HERO ══ -->
-  <section id="hero" class="hero-bg dot-pattern min-h-screen flex items-center relative overflow-hidden pt-20">
-    <div class="absolute -top-32 -right-32 w-[600px] h-[600px] bg-blue-600 rounded-full opacity-[0.06] blur-3xl pointer-events-none"></div>
-    <div class="absolute bottom-0 -left-40 w-[500px] h-[500px] bg-purple-600 rounded-full opacity-[0.05] blur-3xl pointer-events-none"></div>
-
-    <div class="relative z-10 max-w-6xl mx-auto px-6 py-24">
+  <section class="hero-bg dot-pattern min-h-[92vh] flex items-center relative overflow-hidden pt-24">
+    <div class="relative z-10 max-w-6xl mx-auto px-6 py-16">
       <div class="max-w-3xl">
-        <div class="badge badge-blue mb-6">
+        <div class="badge badge-indigo mb-6">
           <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
           Mefford Innovations LLC
         </div>
-        <h1 class="text-5xl sm:text-6xl lg:text-7xl font-black leading-[1.05] tracking-tight mb-6">
-          Building AI Tools<br />
-          That <span class="gradient-text">Actually Solve</span><br />
-          Problems
+        <h1 class="text-5xl sm:text-6xl lg:text-7xl font-black leading-[1.05] tracking-tight mb-6 text-slate-900">
+          Automation that gives<br /><span class="gradient-text">your team its time</span><br />back.
         </h1>
-        <p class="text-lg sm:text-xl text-slate-400 leading-relaxed mb-10 max-w-2xl">
-          25+ years of enterprise software engineering, now focused on purpose-built AI applications and consulting that delivers measurable results — not gimmicks.
+        <p class="text-lg sm:text-xl text-slate-600 leading-relaxed mb-10 max-w-2xl">
+          We design and build AI automations for local businesses: after-hours intake, follow-ups, and the integrations that connect your tools. Built on 25 years of enterprise software experience, delivered with a clear scope, and supported after launch.
         </p>
         <div class="flex flex-wrap gap-4">
-          <a href="#apps" class="btn-primary">
-            Explore Our Apps
+          <a href="/contact.html" data-cta-primary class="btn-primary">
+            <span data-cta-label>Get in touch</span>
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
           </a>
-          <a href="#consulting" class="btn-secondary">Work With Us</a>
+          <a href="#how-we-work" class="btn-secondary">See how it works</a>
         </div>
-
-        <div class="mt-16 grid grid-cols-2 sm:grid-cols-4 gap-6 pt-10 border-t border-white/5">
-          <div>
-            <div class="stat-number">25+</div>
-            <div class="text-xs text-slate-500 mt-1 font-medium uppercase tracking-widest">Years Experience</div>
-          </div>
-          <div>
-            <div class="stat-number">MBA</div>
-            <div class="text-xs text-slate-500 mt-1 font-medium uppercase tracking-widest">IT Management</div>
-          </div>
-          <div>
-            <div class="stat-number">AI</div>
-            <div class="text-xs text-slate-500 mt-1 font-medium uppercase tracking-widest">Native Apps</div>
-          </div>
-          <div>
-            <div class="stat-number">B2B</div>
-            <div class="text-xs text-slate-500 mt-1 font-medium uppercase tracking-widest">Consulting</div>
-          </div>
-        </div>
+        <p class="text-sm text-slate-500 mt-8">Serving Utah County businesses — and remote clients beyond.</p>
       </div>
-    </div>
-
-    <div class="absolute bottom-8 left-1/2 -translate-x-1/2 scroll-bounce text-slate-600">
-      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
     </div>
   </section>
 
   <div class="divider"></div>
 
-  <!-- ══ ABOUT ══ -->
-  <section id="about" class="py-28 px-6">
+  <!-- ══ SOUND FAMILIAR ══ -->
+  <section class="py-24 px-6">
     <div class="max-w-6xl mx-auto">
-      <div class="grid lg:grid-cols-2 gap-16 items-center">
-        <div data-aos="fade-right">
-          <div class="badge badge-purple mb-5">About</div>
-          <h2 class="text-4xl font-black leading-tight mb-6">
-            Engineering experience<br />meets <span class="gradient-text">AI ambition</span>
-          </h2>
-          <p class="text-slate-400 leading-relaxed mb-5">
-            Mefford Innovations LLC is an independent software company with a singular focus: building AI tools that are genuinely useful. Not general-purpose chatbots, not gimmicks — purpose-driven applications engineered around specific problems, with a credit-based model that makes the value transparent.
-          </p>
-          <p class="text-slate-400 leading-relaxed mb-5">
-            Founded by Paul Mefford — a software engineer with 25+ years of experience across startups, enterprise corporations, and everything in between. His career spans companies like USANA Health Sciences, where he led a modern microservices migration, to early-stage startups where he grew infrastructure from a single environment to five AWS deployments serving 300+ clients.
-          </p>
-          <p class="text-slate-400 leading-relaxed">
-            An MBA from Western Governors University bridges the tech-business gap: every solution is evaluated not just on technical quality, but on whether it actually moves the needle for the people using it.
-          </p>
+      <div class="text-center mb-14">
+        <div class="badge badge-blue mb-5 mx-auto">The problem</div>
+        <h2 class="text-3xl sm:text-4xl font-black leading-tight mb-4 text-slate-900">Sound familiar?</h2>
+        <p class="text-slate-600 text-lg max-w-xl mx-auto">Most of the manual work slowing a small business down falls into one of these buckets.</p>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        <div class="card p-6 flex gap-4 items-start">
+          <div class="icon-box icon-box-blue"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1d4ed8" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.9.34 1.79.66 2.65a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.43-1.43a2 2 0 0 1 2.11-.45c.86.32 1.75.54 2.65.66A2 2 0 0 1 22 16.92z"/></svg></div>
+          <div><div class="font-semibold text-slate-900 mb-1">Calls and messages missed after hours</div><div class="text-sm text-slate-600">Inquiries that arrive when nobody's able to answer.</div></div>
         </div>
-        <div class="grid grid-cols-2 gap-4" data-aos="fade-left">
-          <div class="card p-6">
-            <div class="icon-box icon-box-blue mb-4">
-              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#60a5fa" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
-            </div>
-            <div class="text-lg font-bold text-white mb-1">Enterprise-Grade</div>
-            <div class="text-sm text-slate-500">Java · GraphQL · Node.js · Angular · AWS · Microservices</div>
-          </div>
-          <div class="card p-6">
-            <div class="icon-box icon-box-purple mb-4">
-              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#a78bfa" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
-            </div>
-            <div class="text-lg font-bold text-white mb-1">AI-Native</div>
-            <div class="text-sm text-slate-500">OpenAI · Purpose-built apps · Credit-based model</div>
-          </div>
-          <div class="card p-6">
-            <div class="icon-box icon-box-indigo mb-4">
-              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#818cf8" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
-            </div>
-            <div class="text-lg font-bold text-white mb-1">MBA Lens</div>
-            <div class="text-sm text-slate-500">IT Management · WGU · Strategy + engineering</div>
-          </div>
-          <div class="card p-6">
-            <div class="icon-box icon-box-teal mb-4">
-              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2dd4bf" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-            </div>
-            <div class="text-lg font-bold text-white mb-1">Mentor & Lead</div>
-            <div class="text-sm text-slate-500">Team leadership · Architecture · Legacy modernization</div>
-          </div>
+        <div class="card p-6 flex gap-4 items-start">
+          <div class="icon-box icon-box-indigo"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4338ca" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+          <div><div class="font-semibold text-slate-900 mb-1">Follow-ups that quietly slip</div><div class="text-sm text-slate-600">No system to make sure every lead gets a second touch.</div></div>
+        </div>
+        <div class="card p-6 flex gap-4 items-start">
+          <div class="icon-box icon-box-amber"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#b45309" stroke-width="2"><path d="M17 3a2.85 2.85 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5z"/></svg></div>
+          <div><div class="font-semibold text-slate-900 mb-1">The same info re-typed twice</div><div class="text-sm text-slate-600">Entering the same details into two or three different systems.</div></div>
+        </div>
+        <div class="card p-6 flex gap-4 items-start">
+          <div class="icon-box icon-box-green"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#15803d" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="8" y1="3" x2="8" y2="21"/><line x1="3" y1="9" x2="21" y2="9"/></svg></div>
+          <div><div class="font-semibold text-slate-900 mb-1">Intake stuck in a spreadsheet</div><div class="text-sm text-slate-600">Details that land somewhere and never move themselves forward.</div></div>
+        </div>
+        <div class="card p-6 flex gap-4 items-start">
+          <div class="icon-box icon-box-blue"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1d4ed8" stroke-width="2"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg></div>
+          <div><div class="font-semibold text-slate-900 mb-1">Reminders sent by hand</div><div class="text-sm text-slate-600">One-by-one texts and calls that eat into staff time.</div></div>
+        </div>
+        <div class="card p-6 flex gap-4 items-start">
+          <div class="icon-box icon-box-indigo"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4338ca" stroke-width="2"><path d="M21 21H4a1 1 0 0 1-1-1V3"/><path d="M7 15l4-6 4 3 5-8"/></svg></div>
+          <div><div class="font-semibold text-slate-900 mb-1">Reports built by hand</div><div class="text-sm text-slate-600">Pulling the same numbers together every week, manually.</div></div>
         </div>
       </div>
     </div>
@@ -157,224 +120,31 @@
 
   <div class="divider"></div>
 
-  <!-- ══ SERVICES ══ -->
-  <section id="services" class="py-28 px-6">
+  <!-- ══ TWO WAYS TO WORK ══ -->
+  <section class="py-24 px-6">
     <div class="max-w-6xl mx-auto">
-      <div class="text-center mb-16" data-aos="fade-up">
-        <div class="badge badge-blue mb-5 mx-auto">What We Do</div>
-        <h2 class="text-4xl font-black leading-tight mb-4">
-          Three ways we <span class="gradient-text">create value</span>
-        </h2>
-        <p class="text-slate-400 text-lg max-w-xl mx-auto">From shipping consumer apps to solving enterprise problems, the common thread is always the same: AI applied with purpose.</p>
+      <div class="text-center mb-14">
+        <div class="badge badge-indigo mb-5 mx-auto">How we help</div>
+        <h2 class="text-3xl sm:text-4xl font-black leading-tight mb-4 text-slate-900">Two ways to work together</h2>
       </div>
-
-      <div class="grid md:grid-cols-3 gap-6">
-        <div class="card p-8" data-aos="fade-up" data-aos-delay="0">
-          <div class="icon-box icon-box-blue mb-6">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#60a5fa" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18" stroke-width="3"/></svg>
-          </div>
-          <h3 class="text-xl font-bold text-white mb-3">AI Mobile Apps</h3>
-          <p class="text-slate-400 text-sm leading-relaxed mb-5">Purpose-built AI applications for real problems. Our apps use a credit-based model so users pay for AI value, not subscriptions. Built natively for iOS and Android with lean, maintainable architecture.</p>
-          <a href="#apps" class="btn-outline text-xs py-2 px-4">See Our Apps →</a>
-        </div>
-
-        <div class="card p-8" data-aos="fade-up" data-aos-delay="100">
-          <div class="icon-box icon-box-purple mb-6">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#a78bfa" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
-          </div>
-          <h3 class="text-xl font-bold text-white mb-3">B2B AI Consulting</h3>
-          <p class="text-slate-400 text-sm leading-relaxed mb-5">Twenty-five years of watching businesses fight the same battles — manual workflows, siloed data, legacy systems that resist change. We find the friction and remove it with AI that actually integrates with how you work.</p>
-          <a href="#consulting" class="btn-outline text-xs py-2 px-4" style="color: #a78bfa; border-color: rgba(139,92,246,0.35);">Learn More →</a>
-        </div>
-
-        <div class="card p-8 relative overflow-hidden" data-aos="fade-up" data-aos-delay="200">
-          <div class="absolute top-4 right-4"><span class="badge badge-yellow">Coming Soon</span></div>
-          <div class="icon-box icon-box-indigo mb-6">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#818cf8" stroke-width="2"><line x1="6" y1="12" x2="10" y2="12"/><line x1="8" y1="10" x2="8" y2="14"/><line x1="15" y1="13" x2="15.01" y2="13" stroke-width="3"/><line x1="18" y1="11" x2="18.01" y2="11" stroke-width="3"/><rect x="2" y="6" width="20" height="12" rx="2"/></svg>
-          </div>
-          <h3 class="text-xl font-bold text-white mb-3">AI Games &amp; Utilities</h3>
-          <p class="text-slate-400 text-sm leading-relaxed">The next frontier — AI-native experiences beyond productivity. Games, entertainment tools, and utilities built around intelligence rather than just logic. More in development.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <div class="divider"></div>
-
-  <!-- ══ APPS ══ -->
-  <section id="apps" class="py-28 px-6">
-    <div class="max-w-6xl mx-auto">
-      <div class="text-center mb-16" data-aos="fade-up">
-        <div class="badge badge-green mb-5 mx-auto">Our Applications</div>
-        <h2 class="text-4xl font-black leading-tight mb-4">
-          Built on AI. <span class="gradient-text">Designed for people.</span>
-        </h2>
-        <p class="text-slate-400 text-lg max-w-xl mx-auto">Every app solves one specific problem exceptionally well, powered by AI and built with a lean credit model.</p>
-      </div>
-
-      <div class="grid lg:grid-cols-5 gap-6">
-
-        <!-- AI Personal Chef — Featured -->
-        <div class="card-featured lg:col-span-3 p-8 relative overflow-hidden" data-aos="fade-right">
-          <div class="absolute top-0 right-0 w-64 h-64 bg-blue-600 rounded-full opacity-[0.04] blur-3xl pointer-events-none"></div>
-          <div class="flex flex-wrap gap-2 mb-6">
-            <span class="badge badge-blue">iOS</span>
-            <span class="badge badge-green">Early Access</span>
-          </div>
-          <h3 class="text-3xl font-black text-white mb-3">AI Personal Chef</h3>
-          <p class="text-slate-400 leading-relaxed mb-6">Your personal AI nutritionist. Tell it your goals and dietary preferences once — it generates a fully personalized 7-day meal plan with recipes, macros, and a shopping list in seconds. Not a subscription. Not a chatbot. A focused tool that actually plans your meals.</p>
-          <div class="grid sm:grid-cols-2 gap-2 mb-8">
-            <div class="feature-item">
-              <svg class="text-blue-400 flex-shrink-0 mt-0.5" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-              <span class="text-sm text-slate-300">Personalized 7-day meal plans</span>
-            </div>
-            <div class="feature-item">
-              <svg class="text-blue-400 flex-shrink-0 mt-0.5" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-              <span class="text-sm text-slate-300">AI recipe generation</span>
-            </div>
-            <div class="feature-item">
-              <svg class="text-blue-400 flex-shrink-0 mt-0.5" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-              <span class="text-sm text-slate-300">Automatic shopping lists</span>
-            </div>
-            <div class="feature-item">
-              <svg class="text-blue-400 flex-shrink-0 mt-0.5" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-              <span class="text-sm text-slate-300">Macro &amp; calorie targeting</span>
-            </div>
-            <div class="feature-item">
-              <svg class="text-blue-400 flex-shrink-0 mt-0.5" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-              <span class="text-sm text-slate-300">Credit-based AI — pay for value</span>
-            </div>
-            <div class="feature-item">
-              <svg class="text-blue-400 flex-shrink-0 mt-0.5" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-              <span class="text-sm text-slate-300">Dietary restriction support</span>
-            </div>
-          </div>
-          <div class="flex flex-wrap gap-3">
-            <a href="apps/ai-personal-chef.html" class="btn-primary">
-              Learn More
-              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-            </a>
-            <a href="apps/ai-personal-chef.html#early-access" class="btn-secondary">Request Early Access</a>
-          </div>
-        </div>
-
-        <!-- Right column -->
-        <div class="lg:col-span-2 flex flex-col gap-6">
-
-          <!-- Smart Recipe Book -->
-          <div class="card p-7 relative overflow-hidden" data-aos="fade-left" data-aos-delay="100">
-            <div class="absolute top-4 right-4"><span class="badge badge-muted">In Development</span></div>
-            <div class="icon-box icon-box-teal mb-5">
-              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2dd4bf" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
-            </div>
-            <h3 class="text-xl font-bold text-white mb-2">Smart Recipe Book</h3>
-            <p class="text-slate-400 text-sm leading-relaxed">An AI-powered recipe discovery and collection tool. Discover, save, and personalize recipes with intelligent suggestions. Coming soon.</p>
-          </div>
-
-          <!-- More Coming -->
-          <div class="card p-7 border-dashed" data-aos="fade-left" data-aos-delay="200">
-            <div class="text-center py-4">
-              <div class="w-12 h-12 rounded-full border border-dashed border-slate-700 flex items-center justify-center mx-auto mb-4">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#64748b" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
-              </div>
-              <div class="text-sm font-semibold text-slate-400 mb-1">More Coming</div>
-              <p class="text-xs text-slate-600 leading-relaxed">AI utilities, games, and tools currently in development. The credit model scales across all apps.</p>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <div class="divider"></div>
-
-  <!-- ══ CONSULTING ══ -->
-  <section id="consulting" class="py-28 px-6">
-    <div class="max-w-6xl mx-auto">
-      <div class="grid lg:grid-cols-2 gap-16 items-start">
-        <div data-aos="fade-right">
-          <div class="badge badge-purple mb-5">B2B Consulting</div>
-          <h2 class="text-4xl font-black leading-tight mb-6">
-            Let's solve what's<br /><span class="gradient-text">slowing you down</span>
-          </h2>
-          <p class="text-slate-400 leading-relaxed mb-5">
-            Two and a half decades of enterprise software work means we've seen what actually breaks in real businesses. The root cause is almost always some combination of manual processes, siloed data, and legacy systems that were never designed for what the business needs today.
-          </p>
-          <p class="text-slate-400 leading-relaxed mb-8">
-            Whether you need an AI integration built into an existing system, a custom internal tool developed from scratch, or just a second opinion from someone who has navigated these challenges before — we're available to engage.
-          </p>
-          <a href="#contact" class="btn-primary">
-            Start a Conversation
-            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="card-featured p-8">
+          <div class="badge badge-blue mb-5">Ready-made</div>
+          <h3 class="text-2xl font-black text-slate-900 mb-3">After-Hours Assistant</h3>
+          <p class="text-slate-600 leading-relaxed mb-6">A ready-made tool for appointment-driven businesses: it answers web chat and texts 24/7, gathers the basics, and hands your team a ready-to-confirm item to approve with one click.</p>
+          <a href="/after-hours-assistant.html" class="btn-outline">
+            Learn more
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
           </a>
         </div>
-
-        <div data-aos="fade-left">
-          <div class="card p-8 mb-6">
-            <h3 class="text-sm font-semibold text-slate-400 uppercase tracking-widest mb-5">What We Can Help With</h3>
-            <div class="space-y-4">
-              <div class="feature-item">
-                <div class="w-5 h-5 rounded-full bg-purple-500/15 border border-purple-500/25 flex items-center justify-center flex-shrink-0 mt-0.5">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#a78bfa" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
-                </div>
-                <div>
-                  <div class="text-sm font-semibold text-white">Workflow Automation &amp; Process Optimization</div>
-                  <div class="text-xs text-slate-500 mt-0.5">Identify and eliminate repetitive manual work with AI-driven pipelines</div>
-                </div>
-              </div>
-              <div class="feature-item">
-                <div class="w-5 h-5 rounded-full bg-purple-500/15 border border-purple-500/25 flex items-center justify-center flex-shrink-0 mt-0.5">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#a78bfa" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
-                </div>
-                <div>
-                  <div class="text-sm font-semibold text-white">AI Integration into Existing Systems</div>
-                  <div class="text-xs text-slate-500 mt-0.5">Add AI capabilities to your current stack without a full rebuild</div>
-                </div>
-              </div>
-              <div class="feature-item">
-                <div class="w-5 h-5 rounded-full bg-purple-500/15 border border-purple-500/25 flex items-center justify-center flex-shrink-0 mt-0.5">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#a78bfa" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
-                </div>
-                <div>
-                  <div class="text-sm font-semibold text-white">Legacy System Modernization</div>
-                  <div class="text-xs text-slate-500 mt-0.5">Migrate monoliths to modern, maintainable architectures</div>
-                </div>
-              </div>
-              <div class="feature-item">
-                <div class="w-5 h-5 rounded-full bg-purple-500/15 border border-purple-500/25 flex items-center justify-center flex-shrink-0 mt-0.5">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#a78bfa" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
-                </div>
-                <div>
-                  <div class="text-sm font-semibold text-white">Custom Tooling &amp; API Development</div>
-                  <div class="text-xs text-slate-500 mt-0.5">Internal tools, integrations, and APIs built to your exact requirements</div>
-                </div>
-              </div>
-              <div class="feature-item">
-                <div class="w-5 h-5 rounded-full bg-purple-500/15 border border-purple-500/25 flex items-center justify-center flex-shrink-0 mt-0.5">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#a78bfa" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
-                </div>
-                <div>
-                  <div class="text-sm font-semibold text-white">Architecture &amp; Technical Strategy</div>
-                  <div class="text-xs text-slate-500 mt-0.5">Second opinion or full engagement on system design and tech decisions</div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="px-4 py-3 rounded-lg bg-white/[0.03] border border-white/[0.05]">
-            <div class="text-xs text-slate-500 font-medium uppercase tracking-widest mb-2">Core Technologies</div>
-            <div class="flex flex-wrap gap-2">
-              <span class="badge badge-muted">Java</span>
-              <span class="badge badge-muted">GraphQL</span>
-              <span class="badge badge-muted">Node.js</span>
-              <span class="badge badge-muted">Angular</span>
-              <span class="badge badge-muted">AWS</span>
-              <span class="badge badge-muted">OpenAI</span>
-              <span class="badge badge-muted">REST APIs</span>
-              <span class="badge badge-muted">Microservices</span>
-            </div>
-          </div>
+        <div class="card-featured p-8">
+          <div class="badge badge-indigo mb-5">Built for you</div>
+          <h3 class="text-2xl font-black text-slate-900 mb-3">Custom Automation</h3>
+          <p class="text-slate-600 leading-relaxed mb-6">Scoped work to fix a specific manual process, connect tools that don't talk to each other, or add AI to a system you already use — built around your business, not a template.</p>
+          <a href="/custom-automation.html" class="btn-outline" style="color:#1d4ed8; border-color: rgba(37,99,235,0.3);">
+            Learn more
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
         </div>
       </div>
     </div>
@@ -382,75 +152,173 @@
 
   <div class="divider"></div>
 
-  <!-- ══ CONTACT ══ -->
-  <section id="contact" class="py-28 px-6">
-    <div class="max-w-6xl mx-auto text-center" data-aos="fade-up">
-      <div class="badge badge-blue mb-5 mx-auto">Contact</div>
-      <h2 class="text-4xl font-black leading-tight mb-5">
-        Ready to <span class="gradient-text">build something</span>?
-      </h2>
-      <p class="text-slate-400 text-lg max-w-lg mx-auto mb-12">Have a project in mind, want early access to an app, or want to explore what AI could do for your business? Let's talk.</p>
-
-      <div class="grid sm:grid-cols-2 gap-5 max-w-lg mx-auto mb-12">
-        <a href="#" class="card p-6 text-center hover:border-blue-500/30 transition-all group" title="Contact info coming soon">
-          <div class="icon-box icon-box-blue mx-auto mb-3">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#60a5fa" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-          </div>
-          <div class="text-sm font-semibold text-white mb-1">Email</div>
-          <div class="text-xs text-slate-500">Contact info coming soon</div>
-        </a>
-
-        <a href="https://linkedin.com/in/paulmefford/" target="_blank" rel="noopener noreferrer" class="card p-6 text-center hover:border-blue-500/30 transition-all group">
-          <div class="icon-box icon-box-blue mx-auto mb-3">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#60a5fa" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
-          </div>
-          <div class="text-sm font-semibold text-white mb-1">LinkedIn</div>
-          <div class="text-xs text-slate-500">linkedin.com/in/paulmefford</div>
-        </a>
+  <!-- ══ HOW WE WORK ══ -->
+  <section id="how-we-work" class="py-24 px-6">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center mb-16">
+        <div class="badge badge-blue mb-5 mx-auto">Process</div>
+        <h2 class="text-3xl sm:text-4xl font-black leading-tight mb-4 text-slate-900">How we work</h2>
+        <p class="text-slate-600 text-lg max-w-xl mx-auto">A clear process with plain-English updates at every step — no surprises.</p>
       </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-5 gap-6">
+        <div class="text-center">
+          <div class="w-14 h-14 rounded-2xl bg-blue-600/10 border border-blue-600/20 flex items-center justify-center mx-auto mb-4 text-blue-700 font-bold">1</div>
+          <h3 class="font-bold text-slate-900 mb-1.5">Conversation</h3>
+          <p class="text-sm text-slate-600 leading-relaxed">We learn about your business and where time is being lost.</p>
+        </div>
+        <div class="text-center">
+          <div class="w-14 h-14 rounded-2xl bg-indigo-600/10 border border-indigo-600/20 flex items-center justify-center mx-auto mb-4 text-indigo-700 font-bold">2</div>
+          <h3 class="font-bold text-slate-900 mb-1.5">Scoped plan</h3>
+          <p class="text-sm text-slate-600 leading-relaxed">You get a clear, written plan before any build work starts.</p>
+        </div>
+        <div class="text-center">
+          <div class="w-14 h-14 rounded-2xl bg-blue-600/10 border border-blue-600/20 flex items-center justify-center mx-auto mb-4 text-blue-700 font-bold">3</div>
+          <h3 class="font-bold text-slate-900 mb-1.5">Build &amp; test</h3>
+          <p class="text-sm text-slate-600 leading-relaxed">We build against the plan and test against how your business actually runs.</p>
+        </div>
+        <div class="text-center">
+          <div class="w-14 h-14 rounded-2xl bg-indigo-600/10 border border-indigo-600/20 flex items-center justify-center mx-auto mb-4 text-indigo-700 font-bold">4</div>
+          <h3 class="font-bold text-slate-900 mb-1.5">Launch</h3>
+          <p class="text-sm text-slate-600 leading-relaxed">It goes live alongside the tools you already use — nothing to rip out.</p>
+        </div>
+        <div class="text-center">
+          <div class="w-14 h-14 rounded-2xl bg-blue-600/10 border border-blue-600/20 flex items-center justify-center mx-auto mb-4 text-blue-700 font-bold">5</div>
+          <h3 class="font-bold text-slate-900 mb-1.5">Ongoing support</h3>
+          <p class="text-sm text-slate-600 leading-relaxed">We stay reachable after launch, not just through the sale.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ══ WHY WORK WITH US ══ -->
+  <section class="py-24 px-6">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center mb-14">
+        <div class="badge badge-indigo mb-5 mx-auto">Why Mefford Innovations</div>
+        <h2 class="text-3xl sm:text-4xl font-black leading-tight mb-4 text-slate-900">A firm built for local businesses, not a faceless SaaS</h2>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="card p-6">
+          <div class="icon-box icon-box-blue mb-4"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1d4ed8" stroke-width="2"><path d="M12 2l3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7z"/></svg></div>
+          <div class="font-bold text-slate-900 mb-1.5">Senior-level engineering</div>
+          <div class="text-sm text-slate-600">Decades of enterprise software experience applied to small-business problems.</div>
+        </div>
+        <div class="card p-6">
+          <div class="icon-box icon-box-indigo mb-4"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4338ca" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div>
+          <div class="font-bold text-slate-900 mb-1.5">Fits how you already work</div>
+          <div class="text-sm text-slate-600">Practical automation that works alongside your current tools, not a rebuild.</div>
+        </div>
+        <div class="card p-6">
+          <div class="icon-box icon-box-blue mb-4"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1d4ed8" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="9" y1="3" x2="9" y2="21"/></svg></div>
+          <div class="font-bold text-slate-900 mb-1.5">A clear, written scope</div>
+          <div class="text-sm text-slate-600">You know what's being built and why before anything starts.</div>
+        </div>
+        <div class="card p-6">
+          <div class="icon-box icon-box-indigo mb-4"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4338ca" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></div>
+          <div class="font-bold text-slate-900 mb-1.5">Support after launch</div>
+          <div class="text-sm text-slate-600">We stay reachable — this is a relationship, not a handoff.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ══ LED BY ══ -->
+  <section class="py-24 px-6">
+    <div class="max-w-4xl mx-auto">
+      <div class="card p-8 sm:p-10 flex flex-col sm:flex-row items-center sm:items-start gap-8 text-center sm:text-left">
+        <img src="/assets/img/paul-mefford.jpg" alt="Paul Mefford, Founder &amp; Principal Engineer" class="w-24 h-24 rounded-2xl flex-shrink-0 object-cover object-top" width="96" height="96" />
+        <div>
+          <div class="badge badge-blue mb-4">Led by</div>
+          <h3 class="text-2xl font-black text-slate-900 mb-1">Paul Mefford</h3>
+          <div class="text-indigo-600 font-semibold text-sm mb-4">Founder &amp; Principal Engineer</div>
+          <p class="text-slate-600 leading-relaxed mb-4">25+ years of enterprise software engineering, plus an MBA in IT Management — a background focused on what actually holds up in a real, running business.</p>
+          <a href="/about.html" class="btn-outline">About Paul →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ══ EARLY PARTNER ══ -->
+  <section class="py-24 px-6">
+    <div class="max-w-3xl mx-auto text-center">
+      <div class="badge badge-amber mb-5 mx-auto">Early partners</div>
+      <h2 class="text-3xl sm:text-4xl font-black leading-tight mb-5 text-slate-900">We're onboarding a small number of early partners</h2>
+      <p class="text-slate-600 text-lg leading-relaxed">We're onboarding a small number of Utah County businesses as early partners. Early partners work with us at a discounted or pilot rate in exchange for feedback as we refine the offering — get in touch to see if it's a fit.</p>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ══ FAQ ══ -->
+  <section class="py-24 px-6">
+    <div class="max-w-3xl mx-auto">
+      <div class="text-center mb-12">
+        <div class="badge badge-blue mb-5 mx-auto">FAQ</div>
+        <h2 class="text-3xl sm:text-4xl font-black leading-tight text-slate-900">Common questions</h2>
+      </div>
+      <div>
+        <details class="faq-item">
+          <summary>What does this cost?<svg class="faq-chevron" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></summary>
+          <div class="faq-answer">It depends on the scope of what you need. We'll talk through your situation first, then lay out a clear plan — no pricing guesswork up front.</div>
+        </details>
+        <details class="faq-item">
+          <summary>Do you only work with Utah County businesses?<svg class="faq-chevron" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></summary>
+          <div class="faq-answer">Utah County is home base, and we work with businesses beyond it as well. Get in touch and we'll figure out if it's a fit.</div>
+        </details>
+        <details class="faq-item">
+          <summary>How is this different from generic AI tools?<svg class="faq-chevron" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></summary>
+          <div class="faq-answer">We're not a faceless SaaS. We learn your business, set things up, and stay reachable — senior-level engineering with a local, high-touch service model.</div>
+        </details>
+        <details class="faq-item">
+          <summary>I'm not very technical — is that a problem?<svg class="faq-chevron" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></summary>
+          <div class="faq-answer">No. We handle the technical side and explain everything in plain language — no jargon, no assumed expertise.</div>
+        </details>
+        <details class="faq-item">
+          <summary>How long does it take to get started?<svg class="faq-chevron" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></summary>
+          <div class="faq-answer">It depends on scope. The first step is always a conversation — from there we'll lay out a timeline specific to what you need.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ FINAL CTA ══ -->
+  <section class="py-24 px-6">
+    <div class="max-w-3xl mx-auto text-center card-featured p-12">
+      <h2 class="text-3xl sm:text-4xl font-black leading-tight mb-5 text-slate-900">Ready to get your team's time back?</h2>
+      <p class="text-slate-600 text-lg mb-8 max-w-lg mx-auto">Tell us what's slowing your team down, and we'll talk through what's possible.</p>
+      <a href="/contact.html" data-cta-primary class="btn-primary">
+        <span data-cta-label>Get in touch</span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </a>
     </div>
   </section>
 
   <!-- ══ FOOTER ══ -->
-  <footer class="py-10 px-6">
+  <footer class="py-10 px-6 pb-24 md:pb-10">
     <div class="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
-      <div class="text-slate-500 text-sm">
-        © 2026 Mefford Innovations LLC. All rights reserved.
-      </div>
-      <div class="flex items-center gap-6 text-sm">
-        <a href="privacy-policy.html" class="text-slate-500 hover:text-slate-300 transition-colors">Privacy Policy</a>
-        <a href="https://linkedin.com/in/paulmefford/" target="_blank" rel="noopener noreferrer" class="text-slate-500 hover:text-slate-300 transition-colors">LinkedIn</a>
+      <div class="text-slate-500 text-sm">© 2026 Mefford Innovations LLC. All rights reserved.</div>
+      <div class="flex flex-wrap justify-center items-center gap-x-6 gap-y-2 text-sm">
+        <a href="/after-hours-assistant.html" class="text-slate-500 hover:text-slate-800 transition-colors">After-Hours Assistant</a>
+        <a href="/custom-automation.html" class="text-slate-500 hover:text-slate-800 transition-colors">Custom Automation</a>
+        <a href="/about.html" class="text-slate-500 hover:text-slate-800 transition-colors">About</a>
+        <a href="/labs.html" class="text-slate-500 hover:text-slate-800 transition-colors">Labs</a>
+        <a href="/privacy-policy.html" class="text-slate-500 hover:text-slate-800 transition-colors">Privacy Policy</a>
+        <a href="https://linkedin.com/in/paulmefford/" target="_blank" rel="noopener noreferrer" class="text-slate-500 hover:text-slate-800 transition-colors">LinkedIn</a>
       </div>
     </div>
   </footer>
 
-  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-  <script>
-    AOS.init({ duration: 600, easing: 'ease-out', once: true, offset: 60 });
+  <!-- ══ MOBILE STICKY CTA ══ -->
+  <div class="mobile-cta-bar md:hidden">
+    <a href="/contact.html" data-cta-primary class="btn-primary w-full"><span data-cta-label>Get in touch</span></a>
+  </div>
 
-    // Nav scroll effect
-    const navbar = document.getElementById('navbar');
-    window.addEventListener('scroll', () => {
-      navbar.classList.toggle('scrolled', window.scrollY > 40);
-    });
-
-    // Mobile menu toggle
-    const btn = document.getElementById('mobile-menu-btn');
-    const menu = document.getElementById('mobile-menu');
-    const hamburger = document.getElementById('hamburger-icon');
-    const closeIcon = document.getElementById('close-icon');
-    btn.addEventListener('click', () => {
-      const open = menu.classList.toggle('open');
-      hamburger.classList.toggle('hidden', open);
-      closeIcon.classList.toggle('hidden', !open);
-    });
-    document.querySelectorAll('#mobile-menu a').forEach(a => {
-      a.addEventListener('click', () => {
-        menu.classList.remove('open');
-        hamburger.classList.remove('hidden');
-        closeIcon.classList.add('hidden');
-      });
-    });
-  </script>
+  <script src="/assets/js/site.js"></script>
 </body>
 </html>
